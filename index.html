@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shotcut icon" type="x-icon" href="large-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="enter0">
+        <main>
+            <div class="page1">
+                <div class="menu" id="weatherMenu">
+                    <div class="p">
+                        <i class="fa-solid fa-cloud-sun-rain"></i>
+                        <p>Weather</p>
+                    </div>
+                    <button id="toggleButton"><i id="i" class="fa-solid fa-bars"></i></button>
+                    <div class="menus" id="menus">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">weekly weather</a></li>
+                            <li><a href="#">conditions</a></li>
+                            <li><a href="#">hourly data</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="searchnav">
+            <div class="search">
+                <input type="search" class="input" placeholder="Enter city name">
+                <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="data">
+                <div class="data-content">
+                    <div class="left-content">
+                        <img class="weather-icon" src="cloud.png" width="50%" height="300px" alt="">
+                        <p class="cloudy">cloudy</p>
+                        <p class="place">rajanagaram</p>
+                    </div>
+                    <div class="right-content">
+                        <div class="classp">
+                            <p class="p1">40</p><p class="p0">°C</p>
+                        </div>
+                        <p class="p2">min temp</p>
+                        <p class="p3">max temp</p>
+                        <p class="p4">wind</p>
+                    </div>
+                </div>
+            </div>
+            <div class="loc">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="address">Rajanagaram AP India</p>
+                </div>
+            </div>
+        </div>
+        <div class="Weekly">
+            <div class="Weekly-data">
+                <div class="weeklyday-data">
+                    <div class="day1">
+                        <p class="day">Today</p>
+                        <img src="cloud.png" width="50%" height="50px" alt="">
+                        <div class="dayp">
+                            <p class="dayp1" id="temp1">40</p><p class="dayp0">°C</p>
+                        </div>
+                        <div class="dayp1">
+                            <p class="dayp2" id="mintemp1">min temp</p>
+                            <p class="dayp3" id="maxtemp1">max temp</p>
+                            <p class="dayp4" id="windtemp1">wind direction</p>
+                            <p class="dayp5" id="windspeedtemp1">wind speed</p>
+                        </div>
+                    </div>
+                    <div class="day2">
+                        <p class="day-2">Today</p>
+                        <img src="cloud.png" width="50%" height="50px" alt="">
+                        <div class="dayp">
+                            <p class="dayp1" id="temp2">40</p><p class="dayp0">°C</p>
+                        </div>
+                        <div class="dayp1">
+                            <p class="dayp2" id="mintemp2">min temp</p>
+                            <p class="dayp3" id="maxtemp2">max temp</p>
+                            <p class="dayp4" id="windtemp2">wind direction</p>
+                            <p class="dayp5" id="windspeedtemp2">wind speed</p>
+                        </div>
+                    </div>
+                    <div class="day3">
+                        <p class="day-3">Today</p>
+                        <img src="cloud.png" width="50%" height="50px" alt="">
+                        <div class="dayp">
+                            <p class="dayp1" id="temp3">40</p><p class="dayp0">°C</p>
+                        </div>
+                        <div class="dayp1">
+                            <p class="dayp2" id="mintemp3">min temp</p>
+                            <p class="dayp3" id="maxtemp3">max temp</p>
+                            <p class="dayp4" id="windtemp3">wind direction</p>
+                            <p class="dayp5" id="windspeedtemp3">wind speed</p>
+                        </div>
+                    </div>
+                    <div class="day4">
+                        <p class="day-4">Today</p>
+                        <img src="cloud.png" width="50%" height="50px" alt="">
+                        <div class="dayp">
+                            <p class="dayp1" id="temp4">40</p><p class="dayp0">°C</p>
+                        </div>
+                        <div class="dayp1">
+                            <p class="dayp2" id="mintemp4">min temp</p>
+                            <p class="dayp3" id="maxtemp4">max temp</p>
+                            <p class="dayp4" id="windtemp4">wind direction</p>
+                            <p class="dayp5" id="windspeedtemp4">wind speed</p>
+                        </div>
+                    </div>
+                    <div class="day5">
+                        <p class="day-5">Today</p>
+                        <img src="cloud.png" width="50%" height="50px" alt="">
+                        <div class="dayp">
+                            <p class="dayp-1" id="temp5">40</p><p class="dayp0">°C</p>
+                        </div>
+                        <div class="dayp1">
+                            <p class="dayp2" id="mintemp5">min temp</p>
+                            <p class="dayp3" id="maxtemp5">max temp</p>
+                            <p class="dayp4" id="windtemp5">wind direction</p>
+                            <p class="dayp5" id="windspeedtemp5">wind speed</p>
+                        </div>
+                    </div>
+                    <div class="day6">
+                        <p class="day-6">Today</p>
+                        <img src="cloud.png" width="50%" height="50px" alt="">
+                        <div class="dayp">
+                            <p class="dayp1" id="temp6">40</p><p class="dayp0">°C</p>
+                        </div>
+                        <div class="dayp1">
+                            <p class="dayp2" id="mintemp6">min temp</p>
+                            <p class="dayp3" id="maxtemp6">max temp</p>
+                            <p class="dayp4" id="windtemp6">wind direction</p>
+                            <p class="dayp5" id="windspeedtemp6">wind speed</p>
+                        </div>
+                    </div>
+                    <div class="day7">
+                        <p class="day-7">Today</p>
+                        <img src="cloud.png" width="50%" height="50px" alt="">
+                        <div class="dayp">
+                            <p class="dayp1" id="temp7">40</p><p class="dayp0">°C</p>
+                        </div>
+                        <div class="dayp1">
+                            <p class="dayp2" id="mintemp7">min temp</p>
+                            <p class="dayp3" id="maxtemp7">max temp</p>
+                            <p class="dayp4" id="windtemp7">wind direction</p>
+                            <p class="dayp5" id="windspeedtemp7">wind speed</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="enter">
+        <div class="conditions">
+            <div class="con">
+                <p class="con1">Conditions</p>
+                <div class="one">
+                    <div class="one-one">
+                        <p class="conwinddir">Wind Direction :30</p>
+                        <img src="output-onlinegiftools.gif" alt="">
+                    </div>
+                    <div class="one-one">
+                        <p class="conwindspeed">Wind Speed :30</p>
+                        <img src="output-onlinegiftools (1).gif" alt="">
+                    </div>
+                    <div class="one-one">
+                        <p class="conwindgust">Wind Gust :30</p>
+                        <img src="output-onlinegiftools (2).gif" alt="">
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="one-one">
+                        <p class="sunrise">Sun Rise</p>
+                        <img src="output-onlinegiftools (3).gif" alt="">
+                    </div>
+                    <div class="one-one">
+                        <p class="sunset">Sun Set</p>
+                        <img src="output-onlinegiftools (4).gif" alt="">
+                    </div>
+                    <div class="one-one">
+                        <p class="visibility">visibility</p>
+                        <img src="output-onlinegiftools (5).gif" alt="">
+                    </div>
+                </div>
+                <div class="three">
+                    <div class="one-one">
+                        <p class="Dew">Dew</p>
+                        <img src="output-onlinegiftools (7).gif" alt="">
+                    </div>
+                    <div class="one-one">
+                        <p class="Humidity">Humidity</p>
+                        <img src="output-onlinegiftools (8).gif" alt="">
+                    </div>
+                    <div class="one-one">
+                        <p class="clouds">clouds</p>
+                        <img src="output-onlinegiftools (9).gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot-panel1">
+            <a href="#">Back to Top</a>
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to know from us</p>
+                <a href="https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/$%7Bcity%7D?unitGroup=metric&key=EJ6UBL2JEQGYB3AA4ENASN62J&contentType=json">Weather</a>
+                <a href="#">Daily</a>
+                <a href="#">About Climate</a>
+                <a href="#">weather conditions</a>
+                <a href="#">Information</a>
+                <a href="#">Nature science</a>
+            </ul>
+            <ul>
+                <p>Earn Knowldege with Us</p>
+                <a href="#">Know about Climate</a>
+                <a href="#">Understand the Nature</a>
+                <a href="#">Protect and Save The Nature</a>
+                <a href="#">Know Global Warming</a>
+                <a href="#">Become an Nature lover</a>
+                <a href="#">Fulfilment by Climate</a>
+                <a href="#">Understand the climate changes</a>
+                <a href="#">kKnow more Information</a>
+            </ul>
+            <ul>
+                <p>Connect with Us</p>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a href="#">Climate and Global Warming</a>
+                <a href="#">Climate changes</a>
+                <a href="#">conditions</a>
+                <a href="#">100% Acuurence Information</a>
+                <a href="#">Weather App Download</a>
+                <a href="#">Weather App Download</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo">
+                <img src="large-removebg-preview.png" width="200px" height="100px" alt="">
+            </div>
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a href="#">Conditions of Use</a>
+                <a href="">Privacy</a>
+                <a href="">Your Adds Privacy Choice</a>
+            </div>
+            <div class="copyright">
+                &#169; 1996-2024, SVH.Com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
