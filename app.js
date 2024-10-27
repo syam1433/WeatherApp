@@ -85,17 +85,30 @@ btn.addEventListener("click", async ()=>{
     document.querySelector(".Humidity").innerText=`humidity : ${data.days[0].humidity}`;
     document.querySelector(".clouds").innerText=`clouds : ${data.days[0].cloudcover}`;
     //icons
-    if(data.currentConditions.conditions=="rain"){
+    let enter0=document.getElementById("enter0")
+    if(data.currentConditions.conditions=="Rain"){
         weathericon.src="rainy-removebg-preview.png";
+        enter0.style.backgroundImage = "url('rainbackground.jpg')";
+    }
+    else if(data.currentConditions.conditions=="Rain, Overcast"){
+        weathericon.src="rainy-removebg-preview.png";
+        enter0.style.backgroundImage = "url('rainbackground.jpg')";
     }
     else if(data.currentConditions.conditions=="Clear"){
         weathericon.src="clear-removebg-preview.png";
+        enter0.style.backgroundImage = "url('clearsky.jpg')";
+    }
+    else if(data.currentConditions.conditions=="Overcast"){
+        weathericon.src="windy-removebg-preview.png";
+        enter0.style.backgroundImage = "url('thunder.jpg')";
     }
     else if(data.currentConditions.conditions=="Partially cloudy"){
         weathericon.src="cloud.png";
+        enter0.style.backgroundImage = "url('partiallycloud.jpeg')";
     }
     else if(data.currentConditions.conditions=="Rain, Partially cloudy"){
         weathericon.src="rainy-removebg-preview.png";
+        enter0.style.backgroundImage = "url('rainbackground.jpg')";
     }
     else if(data.currentConditions.conditions=="fog"){
         weathericon.src="snowandfog-removebg-preview";
